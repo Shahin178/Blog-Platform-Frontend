@@ -2,7 +2,7 @@ import axios from "axios";
 import { store } from "./utils/store"; // import directly from your Redux store
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://blog-platform-backend-1-dqa6.onrender.com/api"||"http://localhost:8080/api",
 });
 
 api.interceptors.request.use(
